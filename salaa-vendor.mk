@@ -594,12 +594,10 @@ PRODUCT_PACKAGES += \
     libsysenv \
     libtflite_mtk \
     libthha \
-    libtlcWidevineModularDrm \
     libtranslator_mapi_v3.0 \
     libtranslator_mdmi_v2.8.2 \
     libtranslator_utils \
     libudf \
-    liburee_meta_drmkeyinstall \
     libvcodec_oal \
     libvcodecdrv_header_stub \
     libverno \
@@ -611,8 +609,6 @@ PRODUCT_PACKAGES += \
     libvpu \
     libvpu5 \
     libwo \
-    libwvhidl \
-    libwvdrmengine \
     libdpframework \
     libmtk_drvb \
     libnir_neon_driver \
@@ -1529,12 +1525,16 @@ PRODUCT_PACKAGES += \
     libstereoinfoaccessor_vsdof \
     libstface_fd_api \
     libstorage_otp \
+    libtlcWidevineModularDrm \
     libtrm \
+    liburee_meta_drmkeyinstall \
     libvia-ril \
     libviamipc-ril \
     libwifi-hal-mtk \
     libwifitest \
     libwpfa \
+    libwvhidl \
+    libwvdrmengine \
     libmcv_runtime.mtk \
     libneuron_runtime.5 \
     libneuron_runtime \
@@ -1619,7 +1619,6 @@ PRODUCT_PACKAGES += \
     libbsproxy \
     libdav1d.so \
     libdpservice \
-    liboemcrypto \
     libormshalclient \
     libpnscr2 \
     librpmbengclient \
@@ -1674,6 +1673,7 @@ PRODUCT_PACKAGES += \
     libgf_hal_G6 \
     libgf_hal_G7 \
     libhwm-oplus_odm \
+    liboemcrypto \
     libpn553_fw \
     libpn557_fw \
     libremosaic_wrapper_odm \
