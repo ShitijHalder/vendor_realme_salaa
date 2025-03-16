@@ -3203,11 +3203,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libnvram.so"],
-			shared_libs: ["libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnvram.so"],
-			shared_libs: ["libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -3623,11 +3623,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libsysenv.so"],
-			shared_libs: ["liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsysenv.so"],
-			shared_libs: ["liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -24225,7 +24225,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.charger@1.0-service"],
-			shared_libs: ["vendor.oplus.hardware.charger@1.0", "libcutils", "libhidlbase", "libhidltransport", "liblog", "libutils", "libbase", "android.frameworks.sensorservice@1.0", "android.hardware.sensors@1.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "vendor.oplus.hardware.charger@1.0", "libcutils", "libhidlbase", "libhidltransport", "liblog", "libutils", "libbase", "android.frameworks.sensorservice@1.0", "android.hardware.sensors@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
