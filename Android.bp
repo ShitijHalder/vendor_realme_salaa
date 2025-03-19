@@ -890,18 +890,18 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libalsautils",
+	name: "libalsautils-v31",
 	owner: "realme",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libalsautils.so"],
+			srcs: ["proprietary/vendor/lib/libalsautils-v31.so"],
 			shared_libs: ["liblog", "libcutils", "libaudioutils", "libtinyalsa", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libalsautils.so"],
+			srcs: ["proprietary/vendor/lib64/libalsautils-v31.so"],
 			shared_libs: ["liblog", "libcutils", "libaudioutils", "libtinyalsa", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -4817,7 +4817,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/hw/audio.primary.mt6785.so"],
-			shared_libs: ["libhidlbase", "vendor.mediatek.hardware.mtkpower@1.0", "liblog", "libcutils", "libutils", "libalsautils", "libhardware_legacy", "libhardware", "libaudioutils", "libtinyalsa", "libtinyxml2", "libaudiotoolkit_vendor", "libmedia_helper", "libladder", "android.hardware.audio@7.0", "android.hardware.audio.common-util", "android.hardware.audio.common@7.0", "android.hardware.audio.common@7.0-util", "vendor.mediatek.hardware.audio@7.1", "libaudio_engineer_test", "libktveffect", "libktvreverb", "libktvsoundtouch", "libktvdrc", "libktveq", "libktvvolume", "libktveffect_rec", "libktvns", "liboplus_audio_config", "libtinycompress", "libbwc", "libhidltransport", "libhwbinder", "vendor.mediatek.hardware.bluetooth.audio@2.1", "vendor.mediatek.hardware.bluetooth.audio@2.2", "libaedv", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase", "vendor.mediatek.hardware.mtkpower@1.0", "liblog", "libcutils", "libutils", "libalsautils-v31", "libhardware_legacy", "libhardware", "libaudioutils", "libtinyalsa", "libtinyxml2", "libaudiotoolkit_vendor", "libmedia_helper", "libladder", "android.hardware.audio@7.0", "android.hardware.audio.common-util", "android.hardware.audio.common@7.0", "android.hardware.audio.common@7.0-util", "vendor.mediatek.hardware.audio@7.1", "libaudio_engineer_test", "libktveffect", "libktvreverb", "libktvsoundtouch", "libktvdrc", "libktveq", "libktvvolume", "libktveffect_rec", "libktvns", "liboplus_audio_config", "libtinycompress", "libbwc", "libhidltransport", "libhwbinder", "vendor.mediatek.hardware.bluetooth.audio@2.1", "vendor.mediatek.hardware.bluetooth.audio@2.2", "libaedv", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
